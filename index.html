@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nissi Tech — Trabajadores Digitales para tu Negocio</title>
+<link rel="icon" href="assets/logonissitech.webp" type="image/webp">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<!-- ═══ HERO BANNER ═══ -->
+<section id="hero-banner">
+  <div class="banner-fade-top"></div>
+  <div class="banner-fade-bottom"></div>
+  <div class="banner-fade-left"></div>
+  <div class="banner-fade-right"></div>
+
+  <div class="hero-inner">
+    <h1>Trabajadores digitales<br>para tu <em>negocio</em></h1>
+    <p class="hero-sub">Maximiza tu rendimiento con un equipo de Workers Digitales que gestionan y escalan tu negocio.</p>
+    <div class="hero-btns">
+      <a href="diagnostico-worker.html" class="btn-primary">Quiero una demo gratis</a>
+      <a href="#workers" class="btn-secondary">Ver los workers</a>
+    </div>
+    
+    
+  </div>
+
+  <div class="hero-pill"><div class="dot-live"></div><span class="pill-text">Atención automática · 24 horas · 7 días</span></div>
+
+  <div class="banner-scroll">
+    <span>Scroll</span>
+    <svg viewBox="0 0 18 18" fill="none"><path d="M9 3v10M5 10l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+</section>
+
+<!-- ═══ QUIÉNES SOMOS ═══ -->
+<section id="quienes-somos">
+  <div class="wrap">
+    <div class="qs-header reveal">
+      <div class="sec-eyebrow">Nuestra empresa</div>
+      <h2 class="sec-title">¿Quiénes <em>somos?</em></h2>
+    </div>
+    <div class="qs-grid reveal">
+<div class="qs-text">
+  <span class="tag">Empresa de IA</span>
+  <h2>Ayudamos a empresas a <em>conseguir más clientes</em> con inteligencia artificial</h2>
+  <p>En Nissi Tech combinamos marketing digital, automatización y trabajadores digitales IA que responden, califican prospectos, agendan citas y hacen seguimiento automáticamente.</p>
+  <p>Nuestro objetivo es simple: que tu negocio tenga más clientes, responda más rápido y venda más, sin aumentar tu carga operativa.</p>
+</div>
+
+<div class="qs-promise">
+  <div class="qs-promise-label">Con Nissi Tech puedes:</div>
+  <ul class="qs-promise-list">
+    <li><span class="we-dot" style="background:var(--blue);box-shadow:0 0 5px rgba(61,142,245,.4)"></span><span class="we-worker-role">Atraer prospectos desde internet</span></li>
+    <li><span class="we-dot" style="background:var(--blue);box-shadow:0 0 5px rgba(61,142,245,.4)"></span><span class="we-worker-role">Responder automáticamente con IA</span></li>
+    <li><span class="we-dot" style="background:var(--blue);box-shadow:0 0 5px rgba(61,142,245,.4)"></span><span class="we-worker-role">Organizar tus clientes</span></li>
+    <li><span class="we-dot" style="background:var(--blue);box-shadow:0 0 5px rgba(61,142,245,.4)"></span><span class="we-worker-role">Hacer seguimiento sin esfuerzo</span></li>
+    <li><span class="we-dot" style="background:var(--blue);box-shadow:0 0 5px rgba(61,142,245,.4)"></span><span class="we-worker-role">Tomar decisiones con datos</span></li>
+  </ul>
+  <!-- <div class="qs-promise-text" style="margin-top: 16px;"><strong>Todo desde un solo sistema.</strong></div> -->
+</div>
+
+    </div>
+
+    <div style="margin-top: 40px; text-align: center;">
+      <a href="diagnostico-worker.html" class="btn-secondary">Conoce al equipo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ----------------STATS----------------------------- -->
+ <div class="hero-stats">
+      <div>
+        <div class="stat-num" data-target="40" data-suffix="%">0%</div>
+        <div class="stat-label">de incremento en ventas con <br>una automatización de WhatsApp</div>
+      </div>
+      <div>
+        <div class="stat-num" data-target="24" data-suffix="/7">0/7</div>
+        <div class="stat-label">Disponibilidad total</div>
+      </div>
+      <div>
+        <div class="stat-num" data-target="95" data-suffix="%">0%</div>
+        <div class="stat-label">Satisfacción de clientes</div>
+      </div>
+    </div>
+
+<canvas id="bgc"></canvas>
+<div class="orb orb-a"></div>
+<div class="orb orb-b"></div>
+<div class="orb orb-c"></div>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="#" class="nav-brand">
+    <span class="nav-name">Nissi Tech</span>
+</a>
+<div class="nav-links">
+    <a href="#quienes-somos">¿Quiénes somos?</a>
+    <a href="#servicios">Servicios de crecimiento</a>
+    <a href="#workers">Workers IA</a>
+    <a href="#proceso">¿Cómo funciona?</a>
+    <a href="#casos">Casos de éxito</a>
+  </div>
+  <a href="diagnostico-worker.html" class="nav-cta">Demo Gratuita</a>
+  <div class="nav-burger" id="burger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<!-- MOBILE MENU -->
+<div class="nav-mobile" id="mobileMenu">
+<a href="#quienes-somos" onclick="closeMenu()">¿Quiénes somos?</a>
+  <a href="#servicios" onclick="closeMenu()">Servicios de crecimiento</a>
+  <a href="#workers" onclick="closeMenu()">Workers IA</a>
+  <a href="#proceso" onclick="closeMenu()">¿Cómo funciona?</a>
+  <a href="#casos" onclick="closeMenu()">Casos de éxito</a>
+  <a href="diagnostico-worker.html" class="nav-mobile-cta">Demo Gratuita →</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<!-- <section id="hero">
+  <div class="hero-inner">
+    <div class="hero-pill"><div class="dot-live"></div><span class="pill-text">Atención automática · 24 horas · 7 días</span></div>
+    <h1>Trabajadores digitales<br>para tu <em>negocio</em></h1>
+    <p class="hero-sub">Conoce a tu equipo de Workers Digitales.<br>No son bots. No son herramientas genéricas.<br>Son trabajadores digitales, cada uno con un rol claro dentro de tu negocio.<br><span style="opacity:.7;font-size:15px">Mientras otros te ofrecen herramientas de IA, nosotros te entregamos trabajadores digitales listos para operar tu negocio.</span></p>
+    <div class="hero-btns">
+      <a href="diagnostico-worker.html" class="btn-primary">Quiero una demo gratis</a>
+      <a href="#workers" class="btn-secondary">Ver los workers</a>
+    </div>
+
+  </div>
+</section> -->
+
+<!-- ═══ DIFFERENTIATOR BANNER ═══ -->
+<section id="differentiator">
+  <div class="diff-inner">
+    <div class="diff-headline reveal">
+      <span class="tag">La diferencia que importa</span>
+      <h2>No es una herramienta.<br>Es un <em>trabajador.</em></h2>
+      <p>No es una herramienta para usar. Es alguien que trabaja por tu negocio, sin que tengas que pensar en inteligencia artificial.</p>
+      <!-- SVG Illustration: Worker Digital concept -->
+      <svg viewBox="0 0 280 180" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:280px;margin-top:28px;display:block">
+        <defs>
+          <linearGradient id="dg1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#3d8ef5" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#22c98a" stop-opacity="0.08"/>
+          </linearGradient>
+          <linearGradient id="dg2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#3d8ef5"/>
+            <stop offset="100%" stop-color="#22c98a"/>
+          </linearGradient>
+          <linearGradient id="dg3" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00c8ff" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="#3d8ef5" stop-opacity="0.4"/>
+          </linearGradient>
+        </defs>
+        <!-- Background glow -->
+        <ellipse cx="140" cy="90" rx="110" ry="70" fill="url(#dg1)"/>
+        <!-- Central figure: worker node -->
+        <circle cx="140" cy="90" r="34" fill="#0a1628" stroke="#3d8ef5" stroke-width="1.5" stroke-opacity="0.6"/>
+        <circle cx="140" cy="90" r="26" fill="#0e1c32" stroke="#22c98a" stroke-width="1" stroke-opacity="0.4"/>
+        <!-- Worker icon inside -->
+        <circle cx="140" cy="82" r="9" fill="none" stroke="url(#dg2)" stroke-width="1.5"/>
+        <path d="M126 104 Q140 96 154 104" stroke="url(#dg2)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <!-- Connecting lines to satellite nodes -->
+        <line x1="108" y1="75" x2="60" y2="50" stroke="#3d8ef5" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="3,3"/>
+        <line x1="110" y1="90" x2="52" y2="90" stroke="#22c98a" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="3,3"/>
+        <line x1="108" y1="105" x2="60" y2="130" stroke="#00c8ff" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3,3"/>
+        <line x1="172" y1="75" x2="220" y2="50" stroke="#3d8ef5" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="3,3"/>
+        <line x1="170" y1="90" x2="228" y2="90" stroke="#22c98a" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="3,3"/>
+        <line x1="172" y1="105" x2="220" y2="130" stroke="#a78bfa" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3,3"/>
+        <!-- Satellite nodes left -->
+        <rect x="32" y="38" width="36" height="24" rx="6" fill="#0a1628" stroke="#3d8ef5" stroke-width="1" stroke-opacity="0.6"/>
+        <text x="50" y="54" font-size="8" fill="#5aa3ff" font-family="sans-serif" text-anchor="middle">WhatsApp</text>
+        <rect x="24" y="78" width="36" height="24" rx="6" fill="#0a1628" stroke="#22c98a" stroke-width="1" stroke-opacity="0.6"/>
+        <text x="42" y="94" font-size="8" fill="#30e09a" font-family="sans-serif" text-anchor="middle">Agenda</text>
+        <rect x="32" y="118" width="36" height="24" rx="6" fill="#0a1628" stroke="#00c8ff" stroke-width="1" stroke-opacity="0.5"/>
+        <text x="50" y="134" font-size="8" fill="#00c8ff" font-family="sans-serif" text-anchor="middle">Llamadas</text>
+        <!-- Satellite nodes right -->
+        <rect x="212" y="38" width="36" height="24" rx="6" fill="#0a1628" stroke="#3d8ef5" stroke-width="1" stroke-opacity="0.6"/>
+        <text x="230" y="54" font-size="8" fill="#5aa3ff" font-family="sans-serif" text-anchor="middle">Clientes</text>
+        <rect x="220" y="78" width="36" height="24" rx="6" fill="#0a1628" stroke="#22c98a" stroke-width="1" stroke-opacity="0.6"/>
+        <text x="238" y="94" font-size="8" fill="#30e09a" font-family="sans-serif" text-anchor="middle">Ventas</text>
+        <rect x="212" y="118" width="36" height="24" rx="6" fill="#0a1628" stroke="#a78bfa" stroke-width="1" stroke-opacity="0.5"/>
+        <text x="230" y="134" font-size="8" fill="#c4b5fd" font-family="sans-serif" text-anchor="middle">Reportes</text>
+        <!-- Pulse ring -->
+        <circle cx="140" cy="90" r="44" fill="none" stroke="url(#dg3)" stroke-width="0.5" stroke-opacity="0.3">
+          <animate attributeName="r" from="34" to="60" dur="3s" repeatCount="indefinite"/>
+          <animate attributeName="stroke-opacity" from="0.4" to="0" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <!-- Label -->
+        <text x="140" y="166" font-size="9" fill="#3d5570" font-family="sans-serif" text-anchor="middle" letter-spacing="2">WORKER DIGITAL</text>
+      </svg>
+    </div>
+    <div class="diff-statements reveal">
+      <div class="diff-row">
+        <div class="diff-left">Un chatbot responde preguntas.</div>
+        <div class="diff-vs">↓</div>
+        <div class="diff-right">Un worker digital ejecuta procesos.</div>
+      </div>
+      <div class="diff-row">
+        <div class="diff-left">Un asesor atiende clientes.</div>
+        <div class="diff-vs">↓</div>
+        <div class="diff-right">Un worker trabaja por tu negocio.</div>
+      </div>
+      <div class="diff-row">
+        <div class="diff-left">Una herramienta para usar.</div>
+        <div class="diff-vs">↓</div>
+        <div class="diff-right">Alguien que trabaja contigo, siempre.</div>
+      </div>
+      <div style="margin-top: 60px; text-align: center;">
+        <a href="diagnostico-worker.html" class="btn-primary">Diferénciate hoy</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ═══ WORKERS ═══ -->
+<section id="workers">
+  <div class="wrap">
+    <div class="sec-header reveal">
+      <div class="sec-eyebrow">Workers IA</div>
+      <h2 class="sec-title">Conoce a tus <em>Workers</em></h2>
+      <p class="sec-desc">Nuestros Workers atienden, califican, hacen seguimiento y convierten clientes automáticamente.</p>
+    </div>
+    <div class="workers-explainer">
+      <div class="we-left">
+        <div class="we-tag">Workers IA</div>
+        <h3 class="we-title">No son bots.<br>Son <em>empleados digitales.</em></h3>
+        <p class="we-body">Cada uno tiene un rol concreto dentro de tu negocio. Trabajan todos los días, sin descanso y sin aumentar tu equipo humano.</p>
+        <div class="we-footer">
+          <div class="we-steps">
+            <span>Empiezas con uno.</span>
+            <span>Subes por niveles según lo que tu negocio necesite.</span>
+          </div>
+        </div>
+      </div>
+      <div class="we-right">
+        <div class="we-list-label">Cada worker tiene una función concreta</div>
+        <ul class="we-list">
+          <li><span class="we-dot" style="background:#a78bfa;box-shadow:0 0 5px rgba(167,139,250,.4)"></span><span><span class="we-worker-name">Sophie</span><span class="we-worker-role"> — Atiende y agenda citas por WhatsApp</span></span></li>
+          <li><span class="we-dot" style="background:#3d8ef5;box-shadow:0 0 5px rgba(61,142,245,.4)"></span><span><span class="we-worker-name">Valery</span><span class="we-worker-role"> — Organiza y mantiene el orden de tus clientes</span></span></li>
+          <li><span class="we-dot" style="background:#22c98a;box-shadow:0 0 5px rgba(34,201,138,.4)"></span><span><span class="we-worker-name">Tim</span><span class="we-worker-role"> — Reactiva clientes y genera nuevas ventas</span></span></li>
+          <li><span class="we-dot" style="background:#e8b84b;box-shadow:0 0 5px rgba(232,184,75,.4)"></span><span><span class="we-worker-name">Max</span><span class="we-worker-role"> — Analiza resultados y aconseja decisiones</span></span></li>
+          <li><span class="we-dot" style="background:#ff5e7a;box-shadow:0 0 5px rgba(255,94,122,.4)"></span><span><span class="we-worker-name">Luke</span><span class="we-worker-role"> — Responde llamadas y gestiona citas por teléfono</span></span></li>
+        </ul>
+      </div>
+    </div>
+ 
+
+    <div class="workers-section-title">Workers por WhatsApp</div>
+
+    <div class="grid2 reveal">
+
+      
+
+     <!-- SOPHIE -->
+<a href="https://wa.me/51982247314" target="_blank" class="wcard wpurple">
+  <div class="wcard-inner">
+    <div class="wcard-front">
+      <div class="shimmer"></div>
+      <div class="wtop">
+        <div>
+          <div class="wnum">Worker 01 · WhatsApp</div>
+          <div class="wname">Sophie</div>
+          <div class="wrole">Sophie responde tu WhatsApp y llena tu agenda</div>
+        </div>
+        <div class="wibox">
+          <svg viewBox="0 0 34 34" fill="none">
+            <defs>
+              <radialGradient id="sg1" cx="40%" cy="35%" r="65%"><stop offset="0%" stop-color="#c4b5fd"/><stop offset="50%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#3b1fa0"/></radialGradient>
+              <linearGradient id="sg2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#c4b5fd"/></linearGradient>
+              <filter id="sf1"><feGaussianBlur stdDeviation="2.5" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
+            </defs>
+            <circle cx="17" cy="17" r="13" fill="#1a0a50" opacity="0.1" filter="url(#sf1)"/>
+            <circle cx="17" cy="17" r="12" fill="url(#sg1)"/>
+            <ellipse cx="17" cy="17" rx="12" ry="3.8" fill="none" stroke="url(#sg2)" stroke-width="1.2" opacity="0.7"/>
+            <path d="M5 14.5 Q17 11 29 14.5" stroke="white" stroke-width="0.7" stroke-linecap="round" opacity="0.3"/>
+            <ellipse cx="15" cy="11" rx="3" ry="1.8" fill="white" opacity="0.18"/>
+            <circle cx="17" cy="17" r="2" fill="url(#sg1)" opacity="0.8"/>
+          </svg>
+        </div>
+      </div>
+      <div class="wavatar"></div>
+      <p class="wdesc">Atiende tu WhatsApp, llena tu agenda, organiza tus clientes y te ayuda a vender más — sin contratar más personal. Tu empleada digital disponible las 24 horas.</p>
+      <div class="wlabel">¿Qué hace?</div>
+      <ul class="wtasks">
+        <li><span class="tdot"></span>Responde mensajes al instante</li>
+        <li><span class="tdot"></span>Da información clara</li>
+        <li><span class="tdot"></span>Agenda citas</li>
+        <li><span class="tdot"></span>Confirma y recuerda</li>
+        <li><span class="tdot"></span>Reprograma si es necesario</li>
+      </ul>
+      <div class="wexample">
+        <div class="wex-label">Resultado</div>
+        <div class="wex-text">Tu WhatsApp deja de ser un problema.</div>
+      </div>
+      <div class="wch"><span class="ch">💬 WhatsApp</span></div>
+      <div class="wdivider"></div>
+      <div class="wfooter">
+        <div>
+          <div class="wplan-name">$135 USD / mes</div>
+        </div>
+        <span class="wbadge">Sophie</span>
+      </div>
+    </div>
+    <div class="wcard-back">
+      <img src="assets/sophie.webp" class="back-img" alt="Worker">
+    </div>
+  </div>
+</a>
+
+    <!-- TIM -->
+<a href="https://wa.me/51982247314" target="_blank" class="wcard wgreen">
+  <div class="wcard-inner">
+    <div class="wcard-front">
+      <div class="shimmer"></div>
+      <div class="wtop">
+        <div>
+          <div class="wnum">Worker 02 · WhatsApp</div>
+          <div class="wname">Tim</div>
+          <div class="wrole">El que trae clientes de vuelta</div>
+        </div>
+        <div class="wibox">
+          <svg viewBox="0 0 34 34" fill="none">
+            <defs>
+              <linearGradient id="rg1" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0a2a6a"/><stop offset="50%" stop-color="#3d8ef5"/><stop offset="100%" stop-color="#a0c8ff"/></linearGradient>
+              <linearGradient id="rg2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a0c8ff" stop-opacity="0.9"/><stop offset="100%" stop-color="#3d8ef5" stop-opacity="0.2"/></linearGradient>
+              <filter id="rf1"><feGaussianBlur stdDeviation="2" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
+            </defs>
+            <path d="M8 26 Q8 8 26 8" stroke="#3d8ef5" stroke-width="6" opacity="0.1" fill="none" filter="url(#rf1)"/>
+            <path d="M8 26 Q8 8 26 8" stroke="url(#rg1)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M9 24 Q9 9.5 24.5 9.5" stroke="url(#rg2)" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.7"/>
+            <path d="M20 5 L27 8 L23 15" fill="url(#rg1)" stroke="none" opacity="0.95"/>
+            <path d="M21.5 6 L26.5 8.5" stroke="white" stroke-width="0.8" stroke-linecap="round" opacity="0.4"/>
+            <circle cx="26.5" cy="8" r="1.8" fill="#a0c8ff" opacity="0.6"/>
+            <circle cx="26.5" cy="8" r="3.5" fill="none" stroke="#3d8ef5" stroke-width="0.6" opacity="0.25"/>
+          </svg>
+        </div>
+      </div>
+      <div class="wavatar"></div>
+      <p class="wdesc">Tim no atiende en tiempo real.<br>Tim sale a vender.</p>
+      <div class="wlabel">¿Qué hace?</div>
+      <ul class="wtasks">
+        <li><span class="tdot"></span>Envía promociones por WhatsApp</li>
+        <li><span class="tdot"></span>Reactiva clientes antiguos</li>
+        <li><span class="tdot"></span>Recupera cotizaciones</li>
+        <li><span class="tdot"></span>Lanza campañas a tu base</li>
+      </ul>
+      <div class="wexample">
+        <div class="wex-label">👉 Más ventas con clientes que ya te conocen.</div>
+        <div class="wex-text">📌 Tim no es un nivel obligatorio. Se activa cuando quieres mover ventas.</div>
+      </div>
+      <div class="wch"><span class="ch">💬 WhatsApp</span></div>
+      <div class="wdivider"></div>
+      <div class="wfooter">
+        <div>
+          <div class="wplan-name">Desde $130 USD por campaña</div>
+          <div class="wplan-sub">Hasta 500 contactos incluidos</div>
+        </div>
+        <span class="wbadge">Tim</span>
+      </div>
+    </div>
+    <div class="wcard-back">
+      <img src="assets/tim.webp" class="back-img" alt="Worker">
+    </div>
+  </div>
+</a>
+      <!-- VALERY -->
+     <!-- VALERY -->
+<a href="https://wa.me/51982247314" target="_blank" class="wcard wgold">
+  <div class="wcard-inner">
+    <div class="wcard-front">
+      <div class="shimmer"></div>
+      <div class="wtop">
+        <div>
+          <div class="wnum">Worker 03 · WhatsApp</div>
+          <div class="wname">Valery</div>
+          <div class="wrole">Primer Upgrade (+$100)</div>
+        </div>
+        <!-- <div class="wibox">
+          <svg viewBox="0 0 34 34" fill="none">
+            <defs>
+              <linearGradient id="ng1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f5d06a"/><stop offset="100%" stop-color="#9a6010"/></linearGradient>
+              <linearGradient id="ng2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#e8b84b"/><stop offset="100%" stop-color="#5a3800"/></linearGradient>
+              <linearGradient id="ng3" x1="100%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#ffeaa0"/><stop offset="100%" stop-color="#c8810a"/></linearGradient>
+              <filter id="nf1"><feGaussianBlur stdDeviation="2" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
+            </defs>
+            <polygon points="17,5 26,10 26,22 17,27 8,22 8,10" fill="#e8b84b" opacity="0.08" filter="url(#nf1)"/>
+            <polygon points="17,29 8,24 8,20 17,25 26,20 26,24" fill="url(#ng2)" opacity="0.7"/>
+            <polygon points="8,12 8,24 17,29 17,17" fill="url(#ng2)" opacity="0.85"/>
+            <polygon points="26,12 26,24 17,29 17,17" fill="url(#ng1)" opacity="0.95"/>
+            <polygon points="17,5 26,10 17,15 8,10" fill="url(#ng3)"/>
+            <circle cx="17" cy="10" r="2.2" fill="white" opacity="0.85"/>
+            <circle cx="17" cy="10" r="1.1" fill="url(#ng2)" opacity="0.9"/>
+            <circle cx="17" cy="5.5" r="1" fill="#ffd97a" opacity="0.9"/>
+            <circle cx="25.5" cy="10.2" r="1" fill="#ffd97a" opacity="0.7"/>
+            <circle cx="8.5" cy="10.2" r="1" fill="#ffd97a" opacity="0.7"/>
+          </svg>
+        </div> -->
+      </div>
+      <div class="wavatar"></div>
+      <p class="wdesc">La memoria de tu negocio. Valery conecta tu WhatsApp con la información de tus clientes.</p>
+      <div class="wlabel">¿Qué hace?</div>
+      <ul class="wtasks">
+        <li><span class="tdot"></span>Guarda el historial de cada cliente</li>
+        <li><span class="tdot"></span>Recuerda compras anteriores</li>
+        <li><span class="tdot"></span>Etiqueta intereses automáticamente</li>
+        <li><span class="tdot"></span>Permite atención personalizada</li>
+        <li><span class="tdot"></span>Si no tienes CRM, lo crea. Si ya tienes, lo conecta.</li>
+      </ul>
+      <!-- BLOQUE PROMO -->
+      <div class="vpromo-box">
+        <div class="vpromo-header">Recomendado</div>
+        <div class="vpromo-body">
+          <p class="vpromo-sub">Combina Sophie + Valery y obtén</p>
+          <p class="vpromo-price">$185 USD / mes 🔥</p>
+          <p class="vpromo-note">Sophie + Valery juntas, al mismo precio combo.</p>
+        </div>
+      </div>
+      <div class="wexample">
+        <div class="wex-label">👉 ¿Por qué importa?</div>
+        <div class="wex-text">Tu negocio empieza a tener orden. Cada cliente deja de ser un número y se convierte en una relación.</div>
+      </div>
+      <div class="wch"><span class="ch">💬 WhatsApp</span></div>
+      <div class="wdivider"></div>
+      <div class="wfooter">
+        <div>
+          <div class="wplan-name">+$100 USD / mes</div>
+          <div class="wplan-sub">Solo Valery como add-on</div>
+        </div>
+        <span class="wbadge">Valery</span>
+      </div>
+    </div>
+    <div class="wcard-back">
+      <img src="assets/valery.webp" class="back-img" alt="Worker">
+    </div>
+  </div>
+</a>
+
+     <!-- MAX -->
+<a href="https://wa.me/51982247314" target="_blank" class="wcard wgreen">
+  <div class="wcard-inner">
+    <div class="wcard-front">
+      <div class="shimmer"></div>
+      <div class="wtop">
+        <div>
+          <div class="wnum">Worker 04 · WhatsApp</div>
+          <div class="wname">Max</div>
+          <div class="wrole">El que analiza tu negocio y te dice qué mejorar</div>
+        </div>
+        <!-- <div class="wibox">
+          <svg viewBox="0 0 34 34" fill="none">
+            <defs>
+              <radialGradient id="pg1" cx="38%" cy="35%" r="65%"><stop offset="0%" stop-color="#7fffd4"/><stop offset="50%" stop-color="#22c98a"/><stop offset="100%" stop-color="#0f4a30"/></radialGradient>
+              <linearGradient id="pg2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#22c98a"/><stop offset="100%" stop-color="#30e09a"/></linearGradient>
+              <linearGradient id="pg3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a0ffe0" stop-opacity="0.9"/><stop offset="100%" stop-color="#22c98a" stop-opacity="0.2"/></linearGradient>
+              <filter id="pf1"><feGaussianBlur stdDeviation="2.5" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
+            </defs>
+            <circle cx="17" cy="17" r="13" fill="#0a2a18" opacity="0.1" filter="url(#pf1)"/>
+            <circle cx="17" cy="17" r="12" fill="url(#pg1)"/>
+            <ellipse cx="17" cy="17" rx="12" ry="3.5" fill="none" stroke="url(#pg2)" stroke-width="1.2" opacity="0.65"/>
+            <ellipse cx="17" cy="17" rx="8.5" ry="12" fill="none" stroke="url(#pg3)" stroke-width="0.9" opacity="0.5" transform="rotate(-40 17 17)"/>
+            <ellipse cx="12" cy="11" rx="3.5" ry="2" fill="white" opacity="0.18"/>
+            <circle cx="17" cy="17" r="2.5" fill="white" opacity="0.25"/>
+            <circle cx="17" cy="5.5" r="1.2" fill="#a0ffe0" opacity="0.8"/>
+            <circle cx="28.5" cy="17" r="1" fill="#30e09a" opacity="0.6"/>
+            <circle cx="8.5" cy="24" r="0.8" fill="#30e09a" opacity="0.5"/>
+          </svg>
+        </div> -->
+      </div>
+      <div class="wavatar"></div>
+      <p class="wdesc">Max no atiende clientes.<br>Te atiende a ti como dueño.</p>
+      <div class="wlabel">¿Qué analiza?</div>
+      <ul class="wtasks">
+        <li><span class="tdot"></span>Qué servicios convierten</li>
+        <li><span class="tdot"></span>Qué horarios pierden clientes</li>
+        <li><span class="tdot"></span>Qué precios no funcionan</li>
+        <li><span class="tdot"></span>Qué campañas dieron resultado</li>
+        <li><span class="tdot"></span>Y te recomienda qué cambiar</li>
+      </ul>
+      <div class="wexample">
+        <div class="wex-label">👉 Tomas decisiones con datos, no con suposiciones.</div>
+      </div>
+      <div class="mpromo-box">
+        <div class="mpromo-header">Recomendado</div>
+        <div class="mpromo-body">
+          <p class="mpromo-sub">💼 Plan Completo: Sophie + Valery + Max</p>
+          <p class="mpromo-price">$240 USD / mes 🔥</p>
+          <p class="mpromo-old">$335 USD / mes</p>
+          <p class="mpromo-note">Sophie + Valery + Max juntos, al precio combo.</p>
+        </div>
+      </div>
+      <div class="wch"><span class="ch">💬 WhatsApp</span></div>
+      <div class="wdivider"></div>
+      <div class="wfooter">
+        <div>
+          <div class="wplan-name">+$100 USD / mes</div>
+          <div class="wplan-sub">Upgrade estratégico</div>
+        </div>
+        <span class="wbadge">Max</span>
+      </div>
+    </div>
+    <div class="wcard-back">
+      <img src="assets/max.webp" class="back-img" alt="Worker">
+    </div>
+  </div>
+</a>
+
+    <!-- LUKE -->
+<a href="https://wa.me/51982247314" target="_blank" class="wcard wred">
+  <div class="wcard-inner">
+    <div class="wcard-front">
+      <div class="shimmer"></div>
+      <div class="wtop">
+        <div>
+          <div class="wnum">Worker 05 · Llamadas</div>
+          <div class="wname" style="background:linear-gradient(135deg,#ff8fa0,var(--red));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Luke</div>
+          <div class="wrole">Nunca pierdas una llamada</div>
+        </div>
+        <div class="wibox">
+          <svg viewBox="0 0 34 34" fill="none">
+            <defs>
+              <linearGradient id="lg1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#ff8fa0"/><stop offset="50%" stop-color="#ff5e7a"/><stop offset="100%" stop-color="#8a1530"/></linearGradient>
+              <linearGradient id="lg2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#e05070"/><stop offset="100%" stop-color="#5a0a1a"/></linearGradient>
+              <filter id="lf1"><feGaussianBlur stdDeviation="1.8" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
+            </defs>
+            <rect x="15" y="9" width="4" height="16" rx="2" fill="#ff5e7a" opacity="0.15" filter="url(#lf1)"/>
+            <rect x="4" y="14" width="3.5" height="6" rx="1.5" fill="url(#lg2)" opacity="0.55"/>
+            <rect x="4" y="14" width="3.5" height="1" rx="1" fill="white" opacity="0.2"/>
+            <rect x="9" y="11" width="3.5" height="12" rx="1.5" fill="url(#lg1)" opacity="0.75"/>
+            <rect x="9" y="11" width="3.5" height="1.2" rx="1" fill="white" opacity="0.28"/>
+            <rect x="14" y="7" width="4" height="20" rx="2" fill="url(#lg1)"/>
+            <rect x="14" y="7" width="4" height="1.5" rx="1.2" fill="white" opacity="0.38"/>
+            <rect x="17.2" y="7" width="0.8" height="20" rx="0.4" fill="#8a1530" opacity="0.3"/>
+            <rect x="20" y="11" width="3.5" height="12" rx="1.5" fill="url(#lg1)" opacity="0.75"/>
+            <rect x="20" y="11" width="3.5" height="1.2" rx="1" fill="white" opacity="0.28"/>
+            <rect x="25.5" y="14" width="3.5" height="6" rx="1.5" fill="url(#lg2)" opacity="0.55"/>
+            <rect x="25.5" y="14" width="3.5" height="1" rx="1" fill="white" opacity="0.2"/>
+          </svg>
+        </div>
+      </div>
+      <div class="wavatar"></div>
+      <p class="wdesc">Contesta cada llamada que entra a tu negocio de forma automática, con una voz natural y clara. Nunca más una llamada perdida, ni en fines de semana ni feriados.</p>
+      <div class="wlabel">¿Qué hace?</div>
+      <ul class="wtasks">
+        <li><span class="tdot"></span>Contesta llamadas automáticamente</li>
+        <li><span class="tdot"></span>Agenda por teléfono</li>
+        <li><span class="tdot"></span>Transfiere si es necesario</li>
+        <li><span class="tdot"></span>Puede enviar confirmación por WhatsApp</li>
+      </ul>
+      <div class="wexample">
+        <div class="wex-label">📞 LUKE — Complemento de Voz</div>
+      </div>
+      <div class="wch"><span class="ch">📞 Llamadas telefónicas</span></div>
+      <div class="wdivider"></div>
+      <div class="wfooter">
+        <div>
+          <div class="wplan-name">Desde $90 USD / mes</div>
+          <div class="wplan-sub">Complemento de voz</div>
+        </div>
+        <span class="wbadge">Luke</span>
+      </div>
+    </div>
+    <div class="wcard-back">
+      <img src="assets/Luke.webp" class="back-img" alt="Worker">
+      <!-- <div class="wlabel">¿Qué hace?</div>
+      <ul class="wtasks">
+        <li><span class="tdot"></span>Contesta llamadas automáticamente</li>
+        <li><span class="tdot"></span>Agenda por teléfono</li>
+        <li><span class="tdot"></span>Transfiere si es necesario</li>
+        <li><span class="tdot"></span>Puede enviar confirmación por WhatsApp</li>
+      </ul> -->
+    </div>
+  </div>
+</a>
+  </section>
+
+<!-- ═══ SERVICIOS DE CRECIMIENTO ═══ -->
+<section id="servicios">
+  <div class="wrap">
+    <div class="sg-header">
+      <div class="sec-eyebrow">Servicios de crecimiento</div>
+      <h2 class="sec-title">Atraemos clientes para <em>tu negocio</em></h2>
+      <p class="servicios-sub">Antes de automatizar tu negocio, es importante que lleguen prospectos interesados en tus servicios. En Nissi Tech también ayudamos a las empresas a atraer clientes desde internet y conectar esos prospectos con nuestros Workers IA.</p>
+    </div>
+
+    <div class="serv-grid">
+
+      <!-- 01 Landing Pages -->
+      <div class="serv-card">
+        <div class="shimmer"></div>
+        <div class="serv-num">01 — Servicio</div>
+        <div class="serv-top">
+          <div class="serv-title">Landing Pages y Sitios Web</div>
+          <div class="serv-icons">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="4" width="30" height="20" rx="3" stroke="#3d8ef5" stroke-width="1.6" fill="#3d8ef5" fill-opacity="0.08"/>
+              <rect x="3" y="4" width="30" height="5.5" rx="3" fill="#3d8ef5" fill-opacity="0.2"/>
+              <circle cx="7.5" cy="6.7" r="1.1" fill="#3d8ef5"/>
+              <circle cx="11" cy="6.7" r="1.1" fill="#5aa3ff" fill-opacity="0.5"/>
+              <rect x="7" y="13" width="9" height="1.5" rx="0.7" fill="#5aa3ff" fill-opacity="0.7"/>
+              <rect x="7" y="16" width="13" height="1" rx="0.5" fill="#3d5570"/>
+              <rect x="7" y="18.5" width="10" height="1" rx="0.5" fill="#3d5570"/>
+              <rect x="19" y="12" width="9" height="9" rx="2" fill="#3d8ef5" fill-opacity="0.12" stroke="#3d8ef5" stroke-width="1" stroke-opacity="0.4"/>
+              <line x1="13" y1="29" x2="23" y2="29" stroke="#3d8ef5" stroke-width="1.6" stroke-linecap="round"/>
+              <line x1="18" y1="24" x2="18" y2="29" stroke="#3d8ef5" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 6 L8 26 L14 20 L18 28 L20.5 27 L16.5 19 L24 19 Z" fill="#5aa3ff" fill-opacity="0.7" stroke="#3d8ef5" stroke-width="1.2" stroke-linejoin="round"/>
+            </svg>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="10" width="12" height="16" rx="2.5" stroke="#5aa3ff" stroke-width="1.4" fill="#3d8ef5" fill-opacity="0.08"/>
+              <rect x="4" y="10" width="12" height="4" rx="2" fill="#3d8ef5" fill-opacity="0.25"/>
+              <rect x="6.5" y="17" width="7" height="1.2" rx="0.6" fill="#5aa3ff" fill-opacity="0.5"/>
+              <rect x="6.5" y="19.5" width="5" height="1" rx="0.5" fill="#3d5570"/>
+              <path d="M19 18 L24 18 M22 15 L25 18 L22 21" stroke="#3d8ef5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="26" y="10" width="6" height="16" rx="2" fill="#3d8ef5" fill-opacity="0.2" stroke="#3d8ef5" stroke-width="1.2" stroke-opacity="0.5"/>
+              <rect x="27.5" y="19" width="3" height="5" rx="0.8" fill="#3d8ef5" fill-opacity="0.5"/>
+            </svg>
+          </div>
+        </div>
+        <div class="serv-desc">Diseñamos páginas optimizadas para captar clientes y conectarlas directamente con nuestros workers.</div>
+      </div>
+
+      <!-- 02 Publicidad Digital -->
+      <div class="serv-card">
+        <div class="shimmer"></div>
+        <div class="serv-num">02 — Servicio</div>
+        <div class="serv-top">
+          <div class="serv-title">Publicidad Digital</div>
+          <div class="serv-icons">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="18" r="14" fill="#1a2e48"/>
+              <path d="M26 18.2 H18.5 V15.8 H26" fill="#4285F4"/>
+              <path d="M18 6 A12 12 0 0 1 28.4 12.5 L26.3 13.7 A9.5 9.5 0 0 0 18 8.5 Z" fill="#EA4335"/>
+              <path d="M18 6 A12 12 0 0 0 6 18 H8.5 A9.5 9.5 0 0 1 18 8.5 Z" fill="#FBBC05"/>
+              <path d="M6 18 A12 12 0 0 0 18 30 V27.5 A9.5 9.5 0 0 1 8.5 18 Z" fill="#34A853"/>
+              <path d="M18 30 A12 12 0 0 0 29.8 22 L27.6 20.8 A9.5 9.5 0 0 1 18 27.5 Z" fill="#EA4335"/>
+            </svg>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="28" height="28" rx="6" fill="#1877F2"/>
+              <path d="M22 19.5 H19 V30 H15.5 V19.5 H13 V16 H15.5 V14 C15.5 11.2 17 9.5 20 9.5 L22.5 9.6 V13 L21 13 C20 13 19.5 13.4 19.5 14.4 V16 H22.5 Z" fill="white"/>
+            </svg>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="28" height="28" rx="7" fill="url(#ig2)"/>
+              <rect x="10" y="10" width="16" height="16" rx="4.5" stroke="white" stroke-width="1.6" fill="none"/>
+              <circle cx="18" cy="18" r="4.5" stroke="white" stroke-width="1.5" fill="none"/>
+              <circle cx="23.5" cy="12.5" r="1.2" fill="white"/>
+              <defs>
+                <linearGradient id="ig2" x1="4" y1="32" x2="32" y2="4" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#f09433"/>
+                  <stop offset="35%" stop-color="#dc2743"/>
+                  <stop offset="70%" stop-color="#cc2366"/>
+                  <stop offset="100%" stop-color="#bc1888"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="serv-desc">Creamos campañas en Google, Facebook e Instagram para atraer prospectos interesados en tus servicios.</div>
+      </div>
+
+      <!-- 03 Redes Sociales -->
+      <div class="serv-card">
+        <div class="shimmer"></div>
+        <div class="serv-num">03 — Servicio</div>
+        <div class="serv-top">
+          <div class="serv-title">Gestión de Redes Sociales</div>
+          <div class="serv-icons">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="28" height="28" rx="7" fill="url(#ig3)"/>
+              <rect x="10" y="10" width="16" height="16" rx="4.5" stroke="white" stroke-width="1.6" fill="none"/>
+              <circle cx="18" cy="18" r="4.5" stroke="white" stroke-width="1.5" fill="none"/>
+              <circle cx="23.5" cy="12.5" r="1.2" fill="white"/>
+              <defs>
+                <linearGradient id="ig3" x1="4" y1="32" x2="32" y2="4" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#f09433"/>
+                  <stop offset="35%" stop-color="#dc2743"/>
+                  <stop offset="100%" stop-color="#bc1888"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="28" height="28" rx="7" fill="#010101"/>
+              <path d="M22 8.5 C22 11.5 24.2 13.5 27 13.8 V16.8 C25.2 16.6 23.6 15.9 22.3 14.8 V22 C22.3 25.8 19.2 28.9 15.4 28.9 C11.6 28.9 8.5 25.8 8.5 22 C8.5 18.2 11.6 15.1 15.4 15.1 C15.8 15.1 16.1 15.1 16.4 15.2 V18.3 C16.1 18.2 15.8 18.1 15.4 18.1 C13.3 18.1 11.5 19.9 11.5 22 C11.5 24.1 13.3 25.9 15.4 25.9 C17.5 25.9 19.3 24.1 19.3 22 V8.5 Z" fill="white"/>
+              <path d="M22 8.5 C22 11.5 24.2 13.5 27 13.8" stroke="#69C9D0" stroke-width="1.2" fill="none"/>
+            </svg>
+          </div>
+        </div>
+        <div class="serv-desc">Administramos tus redes sociales para convertir seguidores en clientes potenciales.</div>
+      </div>
+
+      <!-- 04 SEO -->
+      <div class="serv-card">
+        <div class="shimmer"></div>
+        <div class="serv-num">04 — Servicio</div>
+        <div class="serv-top">
+          <div class="serv-title">SEO y posicionamiento en Google</div>
+          <div class="serv-icons">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="18" r="14" fill="#1a2e48"/>
+              <path d="M26 18.2 H18.5 V15.8 H26" fill="#4285F4"/>
+              <path d="M18 6 A12 12 0 0 1 28.4 12.5 L26.3 13.7 A9.5 9.5 0 0 0 18 8.5 Z" fill="#EA4335"/>
+              <path d="M18 6 A12 12 0 0 0 6 18 H8.5 A9.5 9.5 0 0 1 18 8.5 Z" fill="#FBBC05"/>
+              <path d="M6 18 A12 12 0 0 0 18 30 V27.5 A9.5 9.5 0 0 1 8.5 18 Z" fill="#34A853"/>
+              <path d="M18 30 A12 12 0 0 0 29.8 22 L27.6 20.8 A9.5 9.5 0 0 1 18 27.5 Z" fill="#EA4335"/>
+            </svg>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="15" cy="15" r="9" stroke="#e8b84b" stroke-width="2" fill="#e8b84b" fill-opacity="0.08"/>
+              <line x1="22" y1="22" x2="31" y2="31" stroke="#e8b84b" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="11" y1="15" x2="19" y2="15" stroke="#f5d080" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.8"/>
+              <line x1="15" y1="11" x2="15" y2="19" stroke="#f5d080" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.8"/>
+            </svg>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polyline points="4,26 12,16 18,20 28,8" stroke="#22c98a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <polyline points="22,8 28,8 28,14" stroke="#22c98a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <line x1="4" y1="30" x2="32" y2="30" stroke="#3d5570" stroke-width="1" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="serv-desc">Optimizamos tu presencia online para que tu negocio aparezca cuando las personas buscan tus servicios.</div>
+      </div>
+
+      <!-- 05 CRM -->
+      <div class="serv-card">
+        <div class="shimmer"></div>
+        <div class="serv-num">05 — Servicio</div>
+        <div class="serv-top">
+          <div class="serv-title">CRM y organización de clientes</div>
+          <div class="serv-icons">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="13" cy="11" r="4.5" stroke="#ff5e7a" stroke-width="1.6" fill="#ff5e7a" fill-opacity="0.1"/>
+              <path d="M4 27 C4 22 8 19 13 19 C18 19 22 22 22 27" stroke="#ff5e7a" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+              <circle cx="25" cy="11" r="3.5" stroke="#ff5e7a" stroke-width="1.3" fill="none" stroke-opacity="0.6"/>
+              <path d="M22 27 C22 23.5 24 21.5 27 21" stroke="#ff5e7a" stroke-width="1.3" stroke-linecap="round" fill="none" stroke-opacity="0.6"/>
+            </svg>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="6" width="28" height="5" rx="2" fill="#ff5e7a" fill-opacity="0.25" stroke="#ff5e7a" stroke-width="1.3"/>
+              <rect x="8" y="14" width="20" height="5" rx="2" fill="#ff5e7a" fill-opacity="0.2" stroke="#ff5e7a" stroke-width="1.3"/>
+              <rect x="13" y="22" width="10" height="5" rx="2" fill="#ff5e7a" fill-opacity="0.3" stroke="#ff5e7a" stroke-width="1.3"/>
+            </svg>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="5" y="4" width="26" height="28" rx="3" stroke="#ff5e7a" stroke-width="1.5" fill="#ff5e7a" fill-opacity="0.06"/>
+              <line x1="10" y1="12" x2="26" y2="12" stroke="#ff5e7a" stroke-width="1.2" stroke-opacity="0.3"/>
+              <line x1="10" y1="18" x2="26" y2="18" stroke="#ff5e7a" stroke-width="1.2" stroke-opacity="0.3"/>
+              <line x1="10" y1="24" x2="20" y2="24" stroke="#ff5e7a" stroke-width="1.2" stroke-opacity="0.3"/>
+              <polyline points="10,11 12,13 16,9" stroke="#ff5e7a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <polyline points="10,17 12,19 16,15" stroke="#ff5e7a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="11" cy="24" r="1" fill="#ff5e7a" fill-opacity="0.5"/>
+            </svg>
+          </div>
+        </div>
+        <div class="serv-desc">Implementamos sistemas para gestionar prospectos y mejorar el seguimiento comercial.</div>
+      </div>
+
+    </div>
+
+    <div class="sg-cta">
+      <a href="https://wa.me/51982247314" target="_blank" class="btn-primary">Quiero atraer más clientes →</a>
+       <p style="margin-top: 16px; font-size: 13px; color: var(--text2); text-align: center;">Todos nuestros servicios se integran con nuestros Workers IA para automatizar la atención y conversión de clientes.</p>
+    </div>
+
+  </div>
+</section>
+<!-- ═══ QUÉ ES ═══ -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <span class="tag">Worker IA</span>
+        <h2>Un empleado digital que hace posible <em>tu siguiente nivel</em></h2>
+        <p>Un trabajador de IA que atiende a tus clientes de forma automática por WhatsApp o por teléfono. Responde preguntas, agenda citas y envía recordatorios con precisión, incluso fuera del horario laboral.</p>
+        <p>No son robots fríos. Hablan como una persona de tu equipo, conocen tus servicios y atienden a tus clientes como tú les enseñas.</p>
+        <div style="margin-top: 24px;">
+          <a href="diagnostico-worker.html" class="btn-primary">Descubre tu worker ideal</a>
+        </div>
+      </div>
+      <div class="about-visual reveal">
+        <div class="av-card">
+          <div class="av-icon">⚡</div>
+          <div><div class="av-label">Responde en segundos</div><div class="av-desc">Sin importar la hora ni el día. Tu negocio siempre activo.</div></div>
+        </div>
+        <div class="av-card">
+          <div class="av-icon">📅</div>
+          <div><div class="av-label">Agenda sin intervención</div><div class="av-desc">Crea, modifica y cancela citas directamente en tu calendario.</div></div>
+        </div>
+        <div class="av-card">
+          <div class="av-icon">🔁</div>
+          <div><div class="av-label">Reactiva clientes</div><div class="av-desc">Escribe a los que no han regresado y los trae de vuelta.</div></div>
+        </div>
+        <div class="av-card">
+          <div class="av-icon">📋</div>
+          <div><div class="av-label">Todo ordenado</div><div class="av-desc">Historial completo de cada cliente, sin papeles ni notas perdidas.</div></div>
+        </div>
+        <div class="av-card">
+          <div class="av-icon">👤</div>
+          <div><div class="av-label">Escala al asesor</div><div class="av-desc">Transfiere al humano cuando la situación lo requiere.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ QUÉ MEJORA ═══ -->
+<section id="mejoras">
+  <div class="wrap">
+    <div class="sec-header reveal">
+      <div class="sec-eyebrow">Resultados</div>
+      <h2 class="sec-title">Lo que cambia desde el <em>primer mes</em></h2>
+    </div>
+    <div class="mejoras-grid reveal">
+      <div class="mcard"><div class="mcard-icon">⏱</div><div class="mcard-title">Responde al instante</div><div class="mcard-desc">Tu negocio atiende en segundos, a cualquier hora. Ni un cliente queda sin respuesta.</div></div>
+      <div class="mcard"><div class="mcard-icon">📅</div><div class="mcard-title">Más citas confirmadas</div><div class="mcard-desc">Las citas se confirman solas. Menos personas que no llegan, más ingresos seguros.</div></div>
+      <div class="mcard"><div class="mcard-icon">💪</div><div class="mcard-title">Menos trabajo manual</div><div class="mcard-desc">Tu equipo deja de responder mensajes repetitivos y se enfoca en lo que importa.</div></div>
+      <div class="mcard"><div class="mcard-icon">🔁</div><div class="mcard-title">Clientes que regresan</div><div class="mcard-desc">El worker escribe a los que no han vuelto y los trae de regreso con ofertas precisas.</div></div>
+      <div class="mcard"><div class="mcard-icon">📋</div><div class="mcard-title">Todo ordenado</div><div class="mcard-desc">Historial de cada cliente sin papeles ni notas perdidas. Todo en un solo lugar.</div></div>
+      <div class="mcard"><div class="mcard-icon">📈</div><div class="mcard-title">Crece sin contratar</div><div class="mcard-desc">El worker maneja cien conversaciones a la vez sin aumentar tus costos de personal.</div></div>
+    </div>
+  </div>
+</section>
+     
+<!-- ═══ CÓMO TRABAJAN JUNTOS ═══ -->
+<section id="juntos">
+  <div class="wrap">
+    <div class="juntos-inner">
+      <div class="sec-header reveal">
+        <div class="sec-eyebrow">Trabajo en equipo</div>
+        <h2 class="sec-title">Cómo trabajan <em>juntos</em></h2>
+      </div>
+      <p class="juntos-desc reveal">Cada worker cumple un rol específico. Juntos forman un equipo digital completo que cubre todo el recorrido del cliente.</p>
+      <div class="juntos-flow reveal">
+        <div class="jf-step">
+          <div class="jf-icon">💬</div>
+          <div class="jf-label">Atención</div>
+        </div>
+        <div class="jf-arrow">→</div>
+        <div class="jf-step">
+          <div class="jf-icon">📋</div>
+          <div class="jf-label">Orden</div>
+        </div>
+        <div class="jf-arrow">→</div>
+        <div class="jf-step">
+          <div class="jf-icon">📊</div>
+          <div class="jf-label">Información</div>
+        </div>
+        <div class="jf-arrow">→</div>
+        <div class="jf-step">
+          <div class="jf-icon">💰</div>
+          <div class="jf-label">Venta</div>
+        </div>
+        <div class="jf-arrow">→</div>
+        <div class="jf-step">
+          <div class="jf-icon">✅</div>
+          <div class="jf-label">Resolución</div>
+        </div>
+      </div>
+      <div class="juntos-note reveal">
+        <span>💡</span>
+        No necesitas entender inteligencia artificial. Solo necesitas saber quién hace qué.
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+
+<!-- ═══ PROCESO ═══ -->
+<section id="proceso">
+  <div class="wrap">
+    <div class="sec-header reveal">
+      <div class="sec-eyebrow">¿Cómo funciona?</div>
+      <h2 class="sec-title">De cero a activo en <em>7 a 14 días</em></h2>
+      <p class="sec-desc">Nosotros nos encargamos de todo. Tú solo nos cuentas cómo funciona tu negocio.</p>
+    </div>
+
+    <div class="steps reveal">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-title">Atraemos prospectos</div>
+        <div class="step-desc">Captamos personas interesadas a través de campañas, SEO y landing pages optimizadas.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-title">Workers los atienden</div>
+        <div class="step-desc">Responden al instante por WhatsApp, dan información, califican y agendan citas automáticamente.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-title">Se confirma y recuerda</div>
+        <div class="step-desc">El worker confirma cada cita, envía recordatorios y reprograma si es necesario.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-title">Seguimiento automático</div>
+        <div class="step-desc">Tim reactiva clientes que no cerraron, Valery mantiene el orden de todos los contactos.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <div class="step-title">Reportes y decisiones</div>
+        <div class="step-desc">Max analiza los resultados y te entrega un resumen diario para que tomes mejores decisiones.</div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top: 48px;">
+      <a href="diagnostico-worker.html" class="btn-primary">Inicia tu transformación</a>
+    </div>
+
+  </div>
+</section>
+<!-- ═══ CASOS REALES ═══ -->
+<section id="casos">
+  <div class="wrap">
+    <div class="sec-header reveal">
+      <div class="sec-eyebrow">Casos de éxito</div>
+      <h2 class="sec-title">Lo que pasa cuando un worker <em>trabaja por ti</em></h2>
+      <p class="sec-desc">Negocios reales, antes y después de tener un worker digital.</p>
+    </div>
+    <div class="casos-grid reveal">
+      <!-- CASO 1 -->
+      <div class="caso-card">
+        <div class="caso-eyebrow"><span>🔹</span> Caso de éxito 1 — Negocio de servicios</div>
+        <div class="caso-phase">
+          <div class="caso-phase-label"><span class="ph-dot ph-before"></span> Antes</div>
+          <p>El dueño respondía WhatsApp entre reuniones, a veces tarde en la noche. Había citas que nunca se confirmaban y clientes que simplemente dejaban de escribir.</p>
+        </div>
+        <div class="caso-divider"></div>
+        <div class="caso-phase">
+          <div class="caso-phase-label"><span class="ph-dot ph-after"></span> Después</div>
+          <p>Ahora el negocio responde al instante, agenda sin intervención y atiende fuera de horario. El dueño se enteró de tres citas nuevas mientras dormía.</p>
+        </div>
+        <div class="caso-divider"></div>
+        <div class="caso-results">
+          <div class="caso-result-item">Más citas confirmadas</div>
+          <div class="caso-result-item">El equipo ya no se interrumpe</div>
+          <div class="caso-result-item">Atención 24/7 sin esfuerzo</div>
+        </div>
+      </div>
+      <!-- CASO 2 -->
+      <div class="caso-card">
+        <div class="caso-eyebrow"><span>🔹</span> Caso de éxito 2 — Atención comercial</div>
+        <div class="caso-phase">
+          <div class="caso-phase-label"><span class="ph-dot ph-before"></span> Antes</div>
+          <p>El equipo pasaba horas respondiendo lo mismo: precios, horarios, disponibilidad. Llegaban agotados a las conversaciones que sí importaban.</p>
+        </div>
+        <div class="caso-divider"></div>
+        <div class="caso-phase">
+          <div class="caso-phase-label"><span class="ph-dot ph-after"></span> Después</div>
+          <p>El worker filtra y responde lo repetitivo. Los asesores solo reciben clientes que ya saben lo que quieren y están listos para comprar.</p>
+        </div>
+        <div class="caso-divider"></div>
+        <div class="caso-results">
+          <div class="caso-result-item">Equipo más enfocado</div>
+          <div class="caso-result-item">Respuestas inmediatas</div>
+          <div class="caso-result-item">Mejor experiencia del cliente</div>
+        </div>
+      </div>
+    </div>
+    <!-- Summary stats -->
+    <div class="casos-summary reveal">
+      <div class="cs-label">En promedio, los negocios que usan un worker digital:</div>
+      <div class="cs-stat">
+        <div class="cs-icon">⚡</div>
+        <div class="cs-text">
+          <div class="cs-num">Responden en segundos</div>
+          <div class="cs-sub">no en horas</div>
+        </div>
+      </div>
+      <div class="cs-stat">
+        <div class="cs-icon">📈</div>
+        <div class="cs-text">
+          <div class="cs-num">Atienden más clientes</div>
+          <div class="cs-sub">sin contratar personal</div>
+        </div>
+      </div>
+      <div class="cs-stat">
+        <div class="cs-icon">🔁</div>
+        <div class="cs-text">
+          <div class="cs-num">Recuperan oportunidades</div>
+          <div class="cs-sub">que antes se perdían</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top: 40px;">
+      <a href="diagnostico-worker.html" class="btn-secondary">Quiero estos resultados</a>
+    </div>
+  </div>
+</section>
+
+      <!-- PLANES Y ESCALERA -->
+<section id="planes">
+  <div class="wrap">
+    <div class="sec-header">
+      <div class="sec-eyebrow">
+        <span>────</span> Precios <span>────</span>
+      </div>
+      <h2 class="sec-title">Planes y <span style="background:linear-gradient(135deg,var(--blue2),var(--green2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">escalera</span></h2>
+      <p class="sec-sub">Empieza simple. Crece por niveles.</p>
+    </div>
+    <div class="planes-box">
+
+      <div class="planes-table">
+        <div class="planes-row">
+          <div class="planes-nivel">Nivel 1</div>
+          <div class="planes-nombre">Sofi</div>
+          <div class="planes-precio">$135 <span>/ mes</span></div>
+        </div>
+        <div class="planes-row">
+          <div class="planes-nivel">Nivel 2</div>
+          <div class="planes-nombre">Sofi + Valery</div>
+          <div class="planes-precio">$235 <span>/ mes</span></div>
+        </div>
+        <div class="planes-row">
+          <div class="planes-nivel">Nivel 3</div>
+          <div class="planes-nombre">Sofi + Valery + Max</div>
+          <div class="planes-precio">$335 <span>/ mes</span></div>
+        </div>
+      </div>
+
+      <div class="planes-extras">
+        <span class="planes-extra-item">+ Tim por campaña</span>
+        <span class="planes-extra-item">+ Luke por voz</span>
+      </div>
+
+      <!-- Promos activas — estilo rojo Luke -->
+      <div class="ppromo-box">
+        <div class="ppromo-header">🔥 Promociones activas</div>
+        <div class="ppromo-body">
+          <div class="ppromo-row">
+            <span class="ppromo-label">Sofi + Valery</span>
+            <span class="ppromo-price">$185 <s class="ppromo-old">$235</s></span>
+          </div>
+          <div class="ppromo-divider"></div>
+          <div class="ppromo-row">
+            <span class="ppromo-label">Sofi + Valery + Max</span>
+            <span class="ppromo-price">$240 <s class="ppromo-old">$335</s></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ---------FORMULARIO------------------- -->
+<section id="contacto" style="padding: 100px 0;">
+  <div class="wrap">
+    <div class="sec-header">
+      <span class="sec-eyebrow">Consultoría IA</span>
+      <h2 class="sec-title">Conecta con <em>Nosotros</em></h2>
+      <p class="sec-desc">Analizamos tu flujo de datos para asignar la potencia de procesamiento ideal.</p>
+    </div>
+
+    <div class="form-container">
+      <form class="form" onsubmit="enviarWhatsApp(event)">
+        
+        <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px;">
+          
+          <div class="form-group">
+            <label for="name">Tu Nombre</label>
+            <input type="text" id="name" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="whatsapp_user">WhatsApp Corporativo</label>
+            <input type="tel" id="whatsapp_user" placeholder="Número telefónico" required>
+            <span class="field-note">Necesario para activar la demo del Worker.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email de Empresa</label>
+            <input type="email" id="email" placeholder="nombre@empresa.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="volume">Volumen de Prospectos</label>
+            <select id="volume">
+              <option value="0-20">0 - 20 mensajes/día</option>
+              <option value="20-100">20 - 100 mensajes/día</option>
+              <option value="100+">Más de 100 mensajes/día</option>
+            </select>
+            <span class="field-note">Define el ancho de banda que usará la IA.</span>
+          </div>
+        </div>
+
+        <div class="form-group full-width" style="display: flex; flex-direction: column; gap: 8px;">
+          <label for="textarea">Proceso a Automatizar</label>
+          <textarea id="textarea" rows="3" placeholder="Ej. Agendamiento, Ventas, Atención..."></textarea>
+          <span class="field-note">Ayuda a Sophie o Max a entender su rol en tu empresa.</span>
+        </div>
+
+        <div class="form-actions" style="display: flex; justify-content: center; margin-top: 32px;">
+          <a href="https://wa.me/51982247314" target="_blank" class="wa-btn">
+            <span>Solicitar Demo Gratuita</span>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+      <!-- ═══ PRECIOS ═══ -->
+<section id="precios">
+  <div class="wrap">
+    <div class="sec-header reveal">
+      <div class="sec-eyebrow">Inversión</div>
+      <h2 class="sec-title">Precios <em>claros</em>, sin sorpresas</h2>
+      <p class="sec-desc">Pagas una sola vez para instalar y configurar, y luego una mensualidad fija. Sin cobros ocultos.</p>
+    </div>
+    <div class="price-wrap reveal">
+      <div class="price-cards">
+        <div class="pc-header">
+          <div class="pc-col-worker">Worker</div>
+          <div class="pc-col-canal">Canal</div>
+          <div class="pc-col-price">Instalación</div>
+          <div class="pc-col-price">Mensualidad</div>
+        </div>
+
+        <!-- Sophie -->
+        <div class="pc-row">
+          <div class="pc-col-worker"><div class="pt-name"><div class="pt-dot" style="background:var(--purple)"></div><div><div class="pt-worker">Sophie</div><div class="pt-desc">Atención y citas</div></div></div></div>
+          <div class="pc-col-canal"><span class="pc-tag">💬 WhatsApp</span></div>
+          <div class="pc-col-price"><div class="price-num">$150</div><div class="price-sub">única vez</div></div>
+          <div class="pc-col-price"><div class="price-num">$135</div><div class="price-sub">por mes</div></div>
+        </div>
+
+        <!-- Valery -->
+        <div class="pc-row">
+          <div class="pc-col-worker"><div class="pt-name"><div class="pt-dot" style="background:var(--gold)"></div><div><div class="pt-worker">Valery</div><div class="pt-desc">Memoria + historial de clientes</div></div></div></div>
+          <div class="pc-col-canal"><span class="pc-tag">💬 WhatsApp</span></div>
+          <div class="pc-col-price"><div class="price-num">$150</div><div class="price-sub">única vez</div></div>
+          <div class="pc-col-price"><div class="price-num">+$100</div><div class="price-sub">add-on / mes</div></div>
+        </div>
+
+        <!-- Max -->
+        <div class="pc-row">
+          <div class="pc-col-worker"><div class="pt-name"><div class="pt-dot" style="background:var(--green)"></div><div><div class="pt-worker">Max</div><div class="pt-desc">Análisis y reportes del negocio</div></div></div></div>
+          <div class="pc-col-canal"><span class="pc-tag">💬 WhatsApp</span></div>
+          <div class="pc-col-price"><div class="price-num">$150</div><div class="price-sub">única vez</div></div>
+          <div class="pc-col-price"><div class="price-num">+$100</div><div class="price-sub">add-on / mes <span class="pc-note">desde el 2do mes</span></div></div>
+        </div>
+
+        <!-- Tim -->
+        <div class="pc-row">
+          <div class="pc-col-worker"><div class="pt-name"><div class="pt-dot" style="background:var(--blue)"></div><div><div class="pt-worker">Tim</div><div class="pt-desc">Campañas y reactivación</div></div></div></div>
+          <div class="pc-col-canal"><span class="pc-tag">💬 WhatsApp</span></div>
+          <div class="pc-col-price"><div class="price-num">—</div><div class="price-sub">complemento</div></div>
+          <div class="pc-col-price"><div class="price-num">Cotización</div><div class="price-sub">según campaña</div></div>
+        </div>
+
+        <!-- Luke -->
+        <div class="pc-row" style="border-bottom:none">
+          <div class="pc-col-worker"><div class="pt-name"><div class="pt-dot" style="background:var(--red)"></div><div><div class="pt-worker">Luke</div><div class="pt-desc">Llamadas automáticas</div></div></div></div>
+          <div class="pc-col-canal"><span class="pc-tag pc-tag-call">📞 Llamadas</span></div>
+          <div class="pc-col-price"><div class="price-num">—</div><div class="price-sub">complemento</div></div>
+          <div class="pc-col-price"><div class="price-num">Cotización</div><div class="price-sub">según volumen</div></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Recordatorio promos -->
+    <div class="price-promo-hint reveal">
+      <span class="pph-fire">🔥</span>
+      <div>
+        <div class="pph-label">Promociones activas</div>
+        <div class="pph-text">Sofi + Valery <strong>$185</strong> <span class="pph-old">$235</span> · Sofi + Valery + Max <strong>$240</strong> <span class="pph-old">$335</span></div>
+      </div>
+    </div>
+
+    <div class="price-note reveal">
+      <div class="pn-item">
+        <div class="pn-label"><span>📌</span>¿Qué incluye la instalación?</div>
+        <div class="pn-text">Configuramos el worker personalizado para tu negocio: cómo habla, qué responde y cómo agenda. Lo conectamos, probamos y ajustamos hasta que funcione perfecto. Tú no haces nada técnico.</div>
+      </div>
+      <div class="pn-item">
+        <div class="pn-label"><span>📌</span>¿Qué incluye la mensualidad?</div>
+        <div class="pn-text">El worker funciona 24/7. Incluye soporte técnico, monitoreo y ajustes menores. Tim y Luke son complementos sin mensualidad fija — se cotizan según el alcance de cada campaña o volumen de llamadas.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section id="cta">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <div class="cta-glow"></div>
+      
+      <h2>¿Quieres ver cómo funciona<br><em>en tu negocio?</em></h2>
+      <p>Te hacemos una demostración gratuita y sin compromiso. Descubre cómo tu worker puede empezar a trabajar desde el primer día.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/51982247314" target="_blank" class="wa-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Escribir por WhatsApp
+        </a>
+        <a href="#workers" class="btn-secondary">Ver los workers</a>
+      </div>
+      <div class="wa-num">O llámanos: <a href="tel:+51982247314">+51 982 247 314</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="foot-brand">Nissi Tech</div>
+  <div class="foot-tagline">Tu negocio, trabajando para ti las 24 horas.</div>
+</footer>
+
+<!-- ═══ SOCIAL DOCK ═══ -->
+<div class="social-dock">
+  <a href="#" target="_blank" class="social-item">
+    <div class="si-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </div>
+    <span class="si-label">@nissitech</span>
+  </a>
+  <a href="#" target="_blank" class="social-item">
+    <div class="si-icon">
+      <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+    </div>
+    <span class="si-label">/nissitech</span>
+  </a>
+</div>
+
+<!-- Scripts -->
+<script src="images64..js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
+</script>
+</body>
+</html>
+
+      
