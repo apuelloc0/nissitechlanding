@@ -105,7 +105,7 @@
     <a href="#proceso">¿Cómo funciona?</a>
     <a href="#casos">Casos de éxito</a>
   </div>
-  <a href="diagnostico.html" class="nav-cta">Demo Gratuita</a>
+  <a href="diagnostico-worker.html" class="nav-cta">Demo Gratuita</a>
   <div class="nav-burger" id="burger" onclick="toggleMenu()">
     <span></span><span></span><span></span>
   </div>
@@ -212,7 +212,7 @@
         <div class="diff-right">Alguien que trabaja contigo, siempre.</div>
       </div>
       <div style="margin-top: 60px; text-align: center;">
-        <a href="diagnostico-worker.html" class="btn-primary">Diferénciate hoy</a>
+        <a href="diagnostico.html" class="btn-primary">Diferénciate hoy</a>
       </div>
     </div>
   </div>
@@ -228,6 +228,7 @@
       <h2 class="sec-title">Conoce a tus <em>Workers</em></h2>
       <p class="sec-desc">Nuestros Workers atienden, califican, hacen seguimiento y convierten clientes automáticamente.</p>
     </div>
+
     <div class="workers-explainer">
       <div class="we-left">
         <div class="we-tag">Workers IA</div>
@@ -251,365 +252,285 @@
         </ul>
       </div>
     </div>
- 
 
     <div class="workers-section-title">Workers por WhatsApp</div>
 
-    <div class="grid2 reveal">
+    <!-- CONTENEDOR DEL SLIDER -->
+    <div class="workers-slider-container reveal">
+      <!-- Flechas de navegación -->
+      <button class="slider-arrow prev" id="prevBtn" aria-label="Anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <button class="slider-arrow next" id="nextBtn" aria-label="Siguiente">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+      <div class="workers-slider-wrapper">
+        <div class="workers-slider-track" id="workersTrack">
 
+          <!-- SOPHIE -->
+          <div class="wcard wpurple">
+            <div class="wcard-inner">
+              <div class="wcard-front">
+                <div class="shimmer"></div>
+                <div class="wtop">
+                  <div>
+                    <div class="wnum">Worker 01 · WhatsApp</div>
+                    <div class="wname">Sophie</div>
+                    <div class="wrole">Sophie responde tu WhatsApp y llena tu agenda</div>
+                  </div>
+                  <div class="wibox">
+                    <svg viewBox="0 0 34 34" fill="none">
+                      <circle cx="17" cy="17" r="12" fill="#a78bfa" opacity="0.9"/>
+                      <path d="M5 14.5 Q17 11 29 14.5" stroke="white" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="wavatar"></div>
+                <p class="wdesc">Atiende tu WhatsApp, llena tu agenda, organiza tus clientes y te ayuda a vender más — sin contratar más personal. Tu empleada digital disponible las 24 horas.</p>
+                <div class="wlabel">¿Qué hace?</div>
+                <ul class="wtasks">
+                  <li><span class="tdot"></span>Responde mensajes al instante</li>
+                  <li><span class="tdot"></span>Da información clara</li>
+                  <li><span class="tdot"></span>Agenda citas</li>
+                  <li><span class="tdot"></span>Confirma y recuerda</li>
+                  <li><span class="tdot"></span>Reprograma si es necesario</li>
+                </ul>
+                <div class="wexample">
+                  <div class="wex-label">Resultado</div>
+                  <div class="wex-text">Tu WhatsApp deja de ser un problema.</div>
+                </div>
+                <div class="wch"><span class="ch">💬 WhatsApp</span></div>
+                <div class="wdivider"></div>
+                <div class="wfooter">
+                  <div>
+                    <div class="wplan-name">$135 USD / mes</div>
+                  </div>
+                </div>
+                <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Sophie" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
+                  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+              </div>
+              <div class="wcard-back">
+                <img src="assets/sophie.webp" class="back-img" alt="Worker">
+                <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Sophie" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
+                  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TIM -->
+          <div class="wcard wgreen">
+            <div class="wcard-inner">
+              <div class="wcard-front">
+                <div class="shimmer"></div>
+                <div class="wtop">
+                  <div>
+                    <div class="wnum">Worker 02 · WhatsApp</div>
+                    <div class="wname">Tim</div>
+                    <div class="wrole">El que trae clientes de vuelta</div>
+                  </div>
+                </div>
+                <div class="wavatar"></div>
+                <p class="wdesc">Tim no atiende en tiempo real.<br>Tim sale a vender.</p>
+                <div class="wlabel">¿Qué hace?</div>
+                <ul class="wtasks">
+                  <li><span class="tdot"></span>Envía promociones por WhatsApp</li>
+                  <li><span class="tdot"></span>Reactiva clientes antiguos</li>
+                  <li><span class="tdot"></span>Recupera cotizaciones</li>
+                  <li><span class="tdot"></span>Lanza campañas a tu base</li>
+                </ul>
+                <div class="wexample">
+                  <div class="wex-label">👉 Más ventas con clientes que ya te conocen.</div>
+                  <div class="wex-text">📌 Tim no es un nivel obligatorio. Se activa cuando quieres mover ventas.</div>
+                </div>
+                <div class="wch"><span class="ch">💬 WhatsApp</span></div>
+                <div class="wdivider"></div>
+                <div class="wfooter">
+                  <div>
+                    <div class="wplan-name">Desde $130 USD por campaña</div>
+                    <div class="wplan-sub">Hasta 500 contactos incluidos</div>
+                  </div>
+                </div>
+                <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Tim" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
+                  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+              </div>
+              <div class="wcard-back">
+                <img src="assets/tim.webp" class="back-img" alt="Worker">
+                <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Tim" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
+                  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- VALERY -->
+          <div class="wcard wgold">
+            <div class="wcard-inner">
+              <div class="wcard-front">
+                <div class="shimmer"></div>
+                <div class="wtop">
+                  <div>
+                    <div class="wnum">Worker 03 · WhatsApp</div>
+                    <div class="wname">Valery</div>
+                    <div class="wrole">Primer Upgrade (+$100)</div>
+                  </div>
+                </div>
+                <div class="wavatar"></div>
+                <p class="wdesc">La memoria de tu negocio. Valery conecta tu WhatsApp con la información de tus clientes.</p>
+                <div class="wlabel">¿Qué hace?</div>
+                <ul class="wtasks">
+                  <li><span class="tdot"></span>Guarda el historial de cada cliente</li>
+                  <li><span class="tdot"></span>Recuerda compras anteriores</li>
+                  <li><span class="tdot"></span>Etiqueta intereses automáticamente</li>
+                  <li><span class="tdot"></span>Permite atención personalizada</li>
+                  <li><span class="tdot"></span>Si no tienes CRM, lo crea. Si ya tienes, lo conecta.</li>
+                </ul>
+                <!-- BLOQUE PROMO -->
+                <div class="vpromo-box">
+                  <div class="vpromo-header">Recomendado</div>
+                  <div class="vpromo-body">
+                    <p class="vpromo-sub">Combina Sophie + Valery y obtén</p>
+                    <p class="vpromo-price">$185 USD / mes 🔥</p>
+                    <p class="vpromo-note">Sophie + Valery juntas, al mismo precio combo.</p>
+                  </div>
+                </div>
+                <div class="wexample">
+                  <div class="wex-label">👉 ¿Por qué importa?</div>
+                  <div class="wex-text">Tu negocio empieza a tener orden. Cada cliente deja de ser un número y se convierte en una relación.</div>
+                </div>
+                <div class="wch"><span class="ch">💬 WhatsApp</span></div>
+                <div class="wdivider"></div>
+                <div class="wfooter">
+                  <div>
+                    <div class="wplan-name">+$100 USD / mes</div>
+                    <div class="wplan-sub">Solo Valery como add-on</div>
+                  </div>
+                </div>
+                <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Valery" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
+                  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+              </div>
+              <div class="wcard-back">
+                <img src="assets/valery.webp" class="back-img" alt="Worker">
+                <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Valery" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
+                  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- MAX -->
+          <div class="wcard wgreen">
+            <div class="wcard-inner">
+              <div class="wcard-front">
+                <div class="shimmer"></div>
+                <div class="wtop">
+                  <div>
+                    <div class="wnum">Worker 04 · WhatsApp</div>
+                    <div class="wname">Max</div>
+                    <div class="wrole">El que analiza tu negocio y te dice qué mejorar</div>
+                  </div>
+                </div>
+                <div class="wavatar"></div>
+                <p class="wdesc">Max no atiende clientes.<br>Te atiende a ti como dueño.</p>
+                <div class="wlabel">¿Qué analiza?</div>
+                <ul class="wtasks">
+                  <li><span class="tdot"></span>Qué servicios convierten</li>
+                  <li><span class="tdot"></span>Qué horarios pierden clientes</li>
+                  <li><span class="tdot"></span>Qué precios no funcionan</li>
+                  <li><span class="tdot"></span>Qué campañas dieron resultado</li>
+                  <li><span class="tdot"></span>Y te recomienda qué cambiar</li>
+                </ul>
+                <div class="wexample">
+                  <div class="wex-label">👉 Tomas decisiones con datos, no con suposiciones.</div>
+                </div>
+                <div class="mpromo-box">
+                  <div class="mpromo-header">Recomendado</div>
+                  <div class="mpromo-body">
+                    <p class="mpromo-sub">💼 Plan Completo: Sophie + Valery + Max</p>
+                    <p class="mpromo-price">$240 USD / mes 🔥</p>
+                    <p class="mpromo-old">$335 USD / mes</p>
+                    <p class="mpromo-note">Sophie + Valery + Max juntos, al precio combo.</p>
+                  </div>
+                </div>
+                <div class="wch"><span class="ch">💬 WhatsApp</span></div>
+                <div class="wdivider"></div>
+                <div class="wfooter">
+                  <div>
+                    <div class="wplan-name">+$100 USD / mes</div>
+                    <div class="wplan-sub">Upgrade estratégico</div>
+                  </div>
+                </div>
+                <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Max" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
+                  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+              </div>
+              <div class="wcard-back">
+                <img src="assets/max.webp" class="back-img" alt="Worker">
+                <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Max" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
+                  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- LUKE -->
+          <div class="wcard wred">
+            <div class="wcard-inner">
+              <div class="wcard-front">
+                <div class="shimmer"></div>
+                <div class="wtop">
+                  <div>
+                    <div class="wnum">Worker 05 · Llamadas</div>
+                    <div class="wname">Luke</div>
+                    <div class="wrole">Nunca pierdas una llamada</div>
+                  </div>
+                </div>
+                <div class="wavatar"></div>
+                <p class="wdesc">Contesta cada llamada que entra a tu negocio de forma automática, con una voz natural y clara. Nunca más una llamada perdida, ni en fines de semana ni feriados.</p>
+                <div class="wlabel">¿Qué hace?</div>
+                <ul class="wtasks">
+                  <li><span class="tdot"></span>Contesta llamadas automáticamente</li>
+                  <li><span class="tdot"></span>Agenda por teléfono</li>
+                  <li><span class="tdot"></span>Transfiere si es necesario</li>
+                  <li><span class="tdot"></span>Puede enviar confirmación por WhatsApp</li>
+                </ul>
+                <div class="wexample">
+                  <div class="wex-label">📞 LUKE — Complemento de Voz</div>
+                </div>
+                <div class="wch"><span class="ch">📞 Llamadas telefónicas</span></div>
+                <div class="wdivider"></div>
+                <div class="wfooter">
+                  <div>
+                    <div class="wplan-name">Desde $90 USD / mes</div>
+                    <div class="wplan-sub">Complemento de voz</div>
+                  </div>
+                </div>
+                <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Luke" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
+                  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+              </div>
+              <div class="wcard-back">
+                <img src="assets/Luke.webp" class="back-img" alt="Worker">
+                <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Luke" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
+                  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- /workers-slider-track -->
+      </div> <!-- /workers-slider-wrapper -->
       
+      <!-- LOS PUNTOS FUERA DEL WRAPPER -->
+      <div class="slider-dots" id="sliderDots"></div>
+    </div> <!-- /workers-slider-container -->
 
-     <!-- SOPHIE -->
-<div class="wcard wpurple">
-  <div class="wcard-inner">
-    <div class="wcard-front">
-      <div class="shimmer"></div>
-      <div class="wtop">
-        <div>
-          <div class="wnum">Worker 01 · WhatsApp</div>
-          <div class="wname">Sophie</div>
-          <div class="wrole">Sophie responde tu WhatsApp y llena tu agenda</div>
-        </div>
-        <div class="wibox">
-          <svg viewBox="0 0 34 34" fill="none">
-            <defs>
-              <radialGradient id="sg1" cx="40%" cy="35%" r="65%"><stop offset="0%" stop-color="#c4b5fd"/><stop offset="50%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#3b1fa0"/></radialGradient>
-              <linearGradient id="sg2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#c4b5fd"/></linearGradient>
-              <filter id="sf1"><feGaussianBlur stdDeviation="2.5" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
-            </defs>
-            <circle cx="17" cy="17" r="13" fill="#1a0a50" opacity="0.1" filter="url(#sf1)"/>
-            <circle cx="17" cy="17" r="12" fill="url(#sg1)"/>
-            <ellipse cx="17" cy="17" rx="12" ry="3.8" fill="none" stroke="url(#sg2)" stroke-width="1.2" opacity="0.7"/>
-            <path d="M5 14.5 Q17 11 29 14.5" stroke="white" stroke-width="0.7" stroke-linecap="round" opacity="0.3"/>
-            <ellipse cx="15" cy="11" rx="3" ry="1.8" fill="white" opacity="0.18"/>
-            <circle cx="17" cy="17" r="2" fill="url(#sg1)" opacity="0.8"/>
-          </svg>
-        </div>
-      </div>
-      <div class="wavatar"></div>
-      <p class="wdesc">Atiende tu WhatsApp, llena tu agenda, organiza tus clientes y te ayuda a vender más — sin contratar más personal. Tu empleada digital disponible las 24 horas.</p>
-      <div class="wlabel">¿Qué hace?</div>
-      <ul class="wtasks">
-        <li><span class="tdot"></span>Responde mensajes al instante</li>
-        <li><span class="tdot"></span>Da información clara</li>
-        <li><span class="tdot"></span>Agenda citas</li>
-        <li><span class="tdot"></span>Confirma y recuerda</li>
-        <li><span class="tdot"></span>Reprograma si es necesario</li>
-      </ul>
-      <div class="wexample">
-        <div class="wex-label">Resultado</div>
-        <div class="wex-text">Tu WhatsApp deja de ser un problema.</div>
-      </div>
-      <div class="wch"><span class="ch">💬 WhatsApp</span></div>
-      <div class="wdivider"></div>
-      <div class="wfooter">
-        <div>
-          <div class="wplan-name">$135 USD / mes</div>
-        </div>
-        <!-- <span class="wbadge">Sophie</span> -->
-      </div>
-      <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Sophie" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
-    </div>
-    <div class="wcard-back">
-      <img src="assets/sophie.webp" class="back-img" alt="Worker">
-      <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Sophie" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
-    </div>
   </div>
-</div>
+</section>
 
-    <!-- TIM -->
-<div class="wcard wgreen">
-  <div class="wcard-inner">
-    <div class="wcard-front">
-      <div class="shimmer"></div>
-      <div class="wtop">
-        <div>
-          <div class="wnum">Worker 02 · WhatsApp</div>
-          <div class="wname">Tim</div>
-          <div class="wrole">El que trae clientes de vuelta</div>
-        </div>
-        <div class="wibox">
-          <svg viewBox="0 0 34 34" fill="none">
-            <defs>
-              <linearGradient id="rg1" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0a2a6a"/><stop offset="50%" stop-color="#3d8ef5"/><stop offset="100%" stop-color="#a0c8ff"/></linearGradient>
-              <linearGradient id="rg2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a0c8ff" stop-opacity="0.9"/><stop offset="100%" stop-color="#3d8ef5" stop-opacity="0.2"/></linearGradient>
-              <filter id="rf1"><feGaussianBlur stdDeviation="2" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
-            </defs>
-            <path d="M8 26 Q8 8 26 8" stroke="#3d8ef5" stroke-width="6" opacity="0.1" fill="none" filter="url(#rf1)"/>
-            <path d="M8 26 Q8 8 26 8" stroke="url(#rg1)" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M9 24 Q9 9.5 24.5 9.5" stroke="url(#rg2)" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.7"/>
-            <path d="M20 5 L27 8 L23 15" fill="url(#rg1)" stroke="none" opacity="0.95"/>
-            <path d="M21.5 6 L26.5 8.5" stroke="white" stroke-width="0.8" stroke-linecap="round" opacity="0.4"/>
-            <circle cx="26.5" cy="8" r="1.8" fill="#a0c8ff" opacity="0.6"/>
-            <circle cx="26.5" cy="8" r="3.5" fill="none" stroke="#3d8ef5" stroke-width="0.6" opacity="0.25"/>
-          </svg>
-        </div>
-      </div>
-      <div class="wavatar"></div>
-      <p class="wdesc">Tim no atiende en tiempo real.<br>Tim sale a vender.</p>
-      <div class="wlabel">¿Qué hace?</div>
-      <ul class="wtasks">
-        <li><span class="tdot"></span>Envía promociones por WhatsApp</li>
-        <li><span class="tdot"></span>Reactiva clientes antiguos</li>
-        <li><span class="tdot"></span>Recupera cotizaciones</li>
-        <li><span class="tdot"></span>Lanza campañas a tu base</li>
-      </ul>
-      <div class="wexample">
-        <div class="wex-label">👉 Más ventas con clientes que ya te conocen.</div>
-        <div class="wex-text">📌 Tim no es un nivel obligatorio. Se activa cuando quieres mover ventas.</div>
-      </div>
-      <div class="wch"><span class="ch">💬 WhatsApp</span></div>
-      <div class="wdivider"></div>
-      <div class="wfooter">
-        <div>
-          <div class="wplan-name">Desde $130 USD por campaña</div>
-          <div class="wplan-sub">Hasta 500 contactos incluidos</div>
-        </div>
-        <!-- <span class="wbadge">Tim</span> -->
-      </div>
-      <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Tim" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
-    </div>
-    <div class="wcard-back">
-      <img src="assets/tim.webp" class="back-img" alt="Worker">
-      <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Tim" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
-    </div>
-  </div>
-</div>
-      <!-- VALERY -->
-     <!-- VALERY -->
-<div class="wcard wgold">
-  <div class="wcard-inner">
-    <div class="wcard-front">
-      <div class="shimmer"></div>
-      <div class="wtop">
-        <div>
-          <div class="wnum">Worker 03 · WhatsApp</div>
-          <div class="wname">Valery</div>
-          <div class="wrole">Primer Upgrade (+$100)</div>
-        </div>
-        <!-- <div class="wibox">
-          <svg viewBox="0 0 34 34" fill="none">
-            <defs>
-              <linearGradient id="ng1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f5d06a"/><stop offset="100%" stop-color="#9a6010"/></linearGradient>
-              <linearGradient id="ng2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#e8b84b"/><stop offset="100%" stop-color="#5a3800"/></linearGradient>
-              <linearGradient id="ng3" x1="100%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#ffeaa0"/><stop offset="100%" stop-color="#c8810a"/></linearGradient>
-              <filter id="nf1"><feGaussianBlur stdDeviation="2" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
-            </defs>
-            <polygon points="17,5 26,10 26,22 17,27 8,22 8,10" fill="#e8b84b" opacity="0.08" filter="url(#nf1)"/>
-            <polygon points="17,29 8,24 8,20 17,25 26,20 26,24" fill="url(#ng2)" opacity="0.7"/>
-            <polygon points="8,12 8,24 17,29 17,17" fill="url(#ng2)" opacity="0.85"/>
-            <polygon points="26,12 26,24 17,29 17,17" fill="url(#ng1)" opacity="0.95"/>
-            <polygon points="17,5 26,10 17,15 8,10" fill="url(#ng3)"/>
-            <circle cx="17" cy="10" r="2.2" fill="white" opacity="0.85"/>
-            <circle cx="17" cy="10" r="1.1" fill="url(#ng2)" opacity="0.9"/>
-            <circle cx="17" cy="5.5" r="1" fill="#ffd97a" opacity="0.9"/>
-            <circle cx="25.5" cy="10.2" r="1" fill="#ffd97a" opacity="0.7"/>
-            <circle cx="8.5" cy="10.2" r="1" fill="#ffd97a" opacity="0.7"/>
-          </svg>
-        </div> -->
-      </div>
-      <div class="wavatar"></div>
-      <p class="wdesc">La memoria de tu negocio. Valery conecta tu WhatsApp con la información de tus clientes.</p>
-      <div class="wlabel">¿Qué hace?</div>
-      <ul class="wtasks">
-        <li><span class="tdot"></span>Guarda el historial de cada cliente</li>
-        <li><span class="tdot"></span>Recuerda compras anteriores</li>
-        <li><span class="tdot"></span>Etiqueta intereses automáticamente</li>
-        <li><span class="tdot"></span>Permite atención personalizada</li>
-        <li><span class="tdot"></span>Si no tienes CRM, lo crea. Si ya tienes, lo conecta.</li>
-      </ul>
-      <!-- BLOQUE PROMO -->
-      <div class="vpromo-box">
-        <div class="vpromo-header">Recomendado</div>
-        <div class="vpromo-body">
-          <p class="vpromo-sub">Combina Sophie + Valery y obtén</p>
-          <p class="vpromo-price">$185 USD / mes 🔥</p>
-          <p class="vpromo-note">Sophie + Valery juntas, al mismo precio combo.</p>
-        </div>
-      </div>
-      <div class="wexample">
-        <div class="wex-label">👉 ¿Por qué importa?</div>
-        <div class="wex-text">Tu negocio empieza a tener orden. Cada cliente deja de ser un número y se convierte en una relación.</div>
-      </div>
-      <div class="wch"><span class="ch">💬 WhatsApp</span></div>
-      <div class="wdivider"></div>
-      <div class="wfooter">
-        <div>
-          <div class="wplan-name">+$100 USD / mes</div>
-          <div class="wplan-sub">Solo Valery como add-on</div>
-        </div>
-        <!-- <span class="wbadge">Valery</span> -->
-      </div>
-      <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Valery" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
-    </div>
-    <div class="wcard-back">
-      <img src="assets/valery.webp" class="back-img" alt="Worker">
-      <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Valery" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
-    </div>
-  </div>
-</div>
-
-     <!-- MAX -->
-<div class="wcard wgreen">
-  <div class="wcard-inner">
-    <div class="wcard-front">
-      <div class="shimmer"></div>
-      <div class="wtop">
-        <div>
-          <div class="wnum">Worker 04 · WhatsApp</div>
-          <div class="wname">Max</div>
-          <div class="wrole">El que analiza tu negocio y te dice qué mejorar</div>
-        </div>
-        <!-- <div class="wibox">
-          <svg viewBox="0 0 34 34" fill="none">
-            <defs>
-              <radialGradient id="pg1" cx="38%" cy="35%" r="65%"><stop offset="0%" stop-color="#7fffd4"/><stop offset="50%" stop-color="#22c98a"/><stop offset="100%" stop-color="#0f4a30"/></radialGradient>
-              <linearGradient id="pg2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#22c98a"/><stop offset="100%" stop-color="#30e09a"/></linearGradient>
-              <linearGradient id="pg3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a0ffe0" stop-opacity="0.9"/><stop offset="100%" stop-color="#22c98a" stop-opacity="0.2"/></linearGradient>
-              <filter id="pf1"><feGaussianBlur stdDeviation="2.5" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
-            </defs>
-            <circle cx="17" cy="17" r="13" fill="#0a2a18" opacity="0.1" filter="url(#pf1)"/>
-            <circle cx="17" cy="17" r="12" fill="url(#pg1)"/>
-            <ellipse cx="17" cy="17" rx="12" ry="3.5" fill="none" stroke="url(#pg2)" stroke-width="1.2" opacity="0.65"/>
-            <ellipse cx="17" cy="17" rx="8.5" ry="12" fill="none" stroke="url(#pg3)" stroke-width="0.9" opacity="0.5" transform="rotate(-40 17 17)"/>
-            <ellipse cx="12" cy="11" rx="3.5" ry="2" fill="white" opacity="0.18"/>
-            <circle cx="17" cy="17" r="2.5" fill="white" opacity="0.25"/>
-            <circle cx="17" cy="5.5" r="1.2" fill="#a0ffe0" opacity="0.8"/>
-            <circle cx="28.5" cy="17" r="1" fill="#30e09a" opacity="0.6"/>
-            <circle cx="8.5" cy="24" r="0.8" fill="#30e09a" opacity="0.5"/>
-          </svg>
-        </div> -->
-      </div>
-      <div class="wavatar"></div>
-      <p class="wdesc">Max no atiende clientes.<br>Te atiende a ti como dueño.</p>
-      <div class="wlabel">¿Qué analiza?</div>
-      <ul class="wtasks">
-        <li><span class="tdot"></span>Qué servicios convierten</li>
-        <li><span class="tdot"></span>Qué horarios pierden clientes</li>
-        <li><span class="tdot"></span>Qué precios no funcionan</li>
-        <li><span class="tdot"></span>Qué campañas dieron resultado</li>
-        <li><span class="tdot"></span>Y te recomienda qué cambiar</li>
-      </ul>
-      <div class="wexample">
-        <div class="wex-label">👉 Tomas decisiones con datos, no con suposiciones.</div>
-      </div>
-      <div class="mpromo-box">
-        <div class="mpromo-header">Recomendado</div>
-        <div class="mpromo-body">
-          <p class="mpromo-sub">💼 Plan Completo: Sophie + Valery + Max</p>
-          <p class="mpromo-price">$240 USD / mes 🔥</p>
-          <p class="mpromo-old">$335 USD / mes</p>
-          <p class="mpromo-note">Sophie + Valery + Max juntos, al precio combo.</p>
-        </div>
-      </div>
-      <div class="wch"><span class="ch">💬 WhatsApp</span></div>
-      <div class="wdivider"></div>
-      <div class="wfooter">
-        <div>
-          <div class="wplan-name">+$100 USD / mes</div>
-          <div class="wplan-sub">Upgrade estratégico</div>
-        </div>
-        <!-- <span class="wbadge">Max</span> -->
-      </div>
-      <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Max" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
-    </div>
-    <div class="wcard-back">
-      <img src="assets/max.webp" class="back-img" alt="Worker">
-      <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Max" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
-    </div>
-  </div>
-</div>
-
-    <!-- LUKE -->
-<div class="wcard wred">
-  <div class="wcard-inner">
-    <div class="wcard-front">
-      <div class="shimmer"></div>
-      <div class="wtop">
-        <div>
-          <div class="wnum">Worker 05 · Llamadas</div>
-          <div class="wname" style="background:linear-gradient(135deg,#ff8fa0,var(--red));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Luke</div>
-          <div class="wrole">Nunca pierdas una llamada</div>
-        </div>
-        <div class="wibox">
-          <svg viewBox="0 0 34 34" fill="none">
-            <defs>
-              <linearGradient id="lg1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#ff8fa0"/><stop offset="50%" stop-color="#ff5e7a"/><stop offset="100%" stop-color="#8a1530"/></linearGradient>
-              <linearGradient id="lg2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#e05070"/><stop offset="100%" stop-color="#5a0a1a"/></linearGradient>
-              <filter id="lf1"><feGaussianBlur stdDeviation="1.8" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
-            </defs>
-            <rect x="15" y="9" width="4" height="16" rx="2" fill="#ff5e7a" opacity="0.15" filter="url(#lf1)"/>
-            <rect x="4" y="14" width="3.5" height="6" rx="1.5" fill="url(#lg2)" opacity="0.55"/>
-            <rect x="4" y="14" width="3.5" height="1" rx="1" fill="white" opacity="0.2"/>
-            <rect x="9" y="11" width="3.5" height="12" rx="1.5" fill="url(#lg1)" opacity="0.75"/>
-            <rect x="9" y="11" width="3.5" height="1.2" rx="1" fill="white" opacity="0.28"/>
-            <rect x="14" y="7" width="4" height="20" rx="2" fill="url(#lg1)"/>
-            <rect x="14" y="7" width="4" height="1.5" rx="1.2" fill="white" opacity="0.38"/>
-            <rect x="17.2" y="7" width="0.8" height="20" rx="0.4" fill="#8a1530" opacity="0.3"/>
-            <rect x="20" y="11" width="3.5" height="12" rx="1.5" fill="url(#lg1)" opacity="0.75"/>
-            <rect x="20" y="11" width="3.5" height="1.2" rx="1" fill="white" opacity="0.28"/>
-            <rect x="25.5" y="14" width="3.5" height="6" rx="1.5" fill="url(#lg2)" opacity="0.55"/>
-            <rect x="25.5" y="14" width="3.5" height="1" rx="1" fill="white" opacity="0.2"/>
-          </svg>
-        </div>
-      </div>
-      <div class="wavatar"></div>
-      <p class="wdesc">Contesta cada llamada que entra a tu negocio de forma automática, con una voz natural y clara. Nunca más una llamada perdida, ni en fines de semana ni feriados.</p>
-      <div class="wlabel">¿Qué hace?</div>
-      <ul class="wtasks">
-        <li><span class="tdot"></span>Contesta llamadas automáticamente</li>
-        <li><span class="tdot"></span>Agenda por teléfono</li>
-        <li><span class="tdot"></span>Transfiere si es necesario</li>
-        <li><span class="tdot"></span>Puede enviar confirmación por WhatsApp</li>
-      </ul>
-      <div class="wexample">
-        <div class="wex-label">📞 LUKE — Complemento de Voz</div>
-      </div>
-      <div class="wch"><span class="ch">📞 Llamadas telefónicas</span></div>
-      <div class="wdivider"></div>
-      <div class="wfooter">
-        <div>
-          <div class="wplan-name">Desde $90 USD / mes</div>
-          <div class="wplan-sub">Complemento de voz</div>
-        </div>
-        <!-- <span class="wbadge">Luke</span> -->
-      </div>
-      <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Luke" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
-    </div>
-    <div class="wcard-back">
-      <img src="assets/Luke.webp" class="back-img" alt="Worker">
-      <!-- <div class="wlabel">¿Qué hace?</div>
-      <ul class="wtasks">
-        <li><span class="tdot"></span>Contesta llamadas automáticamente</li>
-        <li><span class="tdot"></span>Agenda por teléfono</li>
-        <li><span class="tdot"></span>Transfiere si es necesario</li>
-        <li><span class="tdot"></span>Puede enviar confirmación por WhatsApp</li>
-      </ul> -->
-      <a href="https://wa.me/51982247314?text=Hola,%20me%20interesa%20Luke" target="_blank" class="w-wa-btn" title="Consultar por WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
-    </div>
-  </div>
-</div>
-  </section>
 
 <!-- ═══ SERVICIOS DE CRECIMIENTO ═══ -->
 <section id="servicios">
@@ -834,6 +755,8 @@
         </div>
       </div>
     </div>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
   </div>
 </section>
 
@@ -1265,10 +1188,6 @@
 <!-- Scripts -->
 <script src="images64..js"></script>
 <script src="main.js"></script>
-</body>
-</html>
-
-</script>
 </body>
 </html>
 
